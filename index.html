@@ -13,23 +13,6 @@
     />
     <title>David Dionisio - Dowhile 2021</title>
   </head>
-
-  <script>
-    function showMeSomething() {
-      alert(links.instagram)
-    }
-
-    const links = {
-      github: 'deivondionisio',
-      youtube: 'UC493-ESR62ScZiMxd10GYFA',
-      facebook: 'deivon.dionisio',
-      instagram: 'deivon_dionisio',
-      twitter: 'deivon2dionisio'
-    }
-
-    showMeSomething()
-  </script>
-
   <body>
     <main>
       <div class="container">
@@ -39,13 +22,13 @@
           </span>
           <img src="images/perfil.jpg" alt="Foto pessoal" />
         </div>
-        <h1>David Dionisio</h1>
+        <h1 id="userName">David Dionisio</h1>
         <a href="https://github.com/deivondionisio" target="_blank">
           <img src="images/github 2.svg" alt="ícone github" />
           deivon_dionisio</a
         >
         <p>An instructor focused on helping pople start programming for web</p>
-        <ul>
+        <ul id="socialLinks">
           <li>
             <a href="https://youtube.com.br" target="_blank">
               <img src="images/youtube.svg" alt="ícone youtube" />
@@ -69,5 +52,22 @@
         </ul>
       </div>
     </main>
+    <script>
+      const LinksSocialMedia = {
+        github: 'deivondionisio',
+        youtube: 'UC493-ESR62ScZiMxd10GYFA',
+        facebook: 'deivon.dionisio',
+        instagram: 'deivon_dionisio',
+        twitter: 'deivon2dionisio'
+      }
+
+      function changeSocialMediaLinks() {
+        for (let li of socialLinks.children) {
+          alert(li)
+        }
+      }
+
+      changeSocialMediaLinks()
+    </script>
   </body>
 </html>
