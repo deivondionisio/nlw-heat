@@ -43,6 +43,11 @@ main {
   z-index: 1;
 }
 
+.avatar span:hover {
+  transform: rotate(6000grad);
+  transition: 3s;
+}
+
 .avatar > img {
   width: 10rem;
   height: 11.5rem;
