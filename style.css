@@ -2,23 +2,11 @@
   margin: 0;
 }
 
-/*@keyframes bounce {
-  0%,
-  20%,
-  60%,
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+@keyframes is-panning {
+  from {
+    transform: translateY(-90px);
   }
-  40% {
-    -webkit-transform: translateY(-20px);
-    transform: translateY(-20px);
-  }
-  80% {
-    -webkit-transform: translateY(-10);
-    transform: translateY(-10);
-  }
-}*/
+}
 
 html,
 body {
@@ -53,6 +41,7 @@ main {
   width: 10rem;
   margin: 11.5rem auto 0;
   position: relative;
+  animation: is-panning 10s ease-in-out infinite alternate;
 }
 
 .avatar span {
