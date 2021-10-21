@@ -31,49 +31,27 @@
         <ul id="socialLinks">
           <li class="youtube">
             <a href="https://youtube.com.br" target="_blank">
-              <img id="efects" src="images/youtube.svg" alt="ícone youtube" />
+              <img src="images/youtube.svg" alt="ícone youtube" />
             </a>
           </li>
           <li class="instagram">
-            <a href="https://www.instagram.com/deivon_dionisio" target="_blank">
-              <img
-                id="efects"
-                src="images/instagram.svg"
-                alt="ícone instagram"
-              />
+            <a href="https://www.instagram.com/" target="_blank">
+              <img src="images/instagram.svg" alt="ícone instagram" />
             </a>
           </li>
           <li class="facebook">
-            <a href="https://www.facebook.com/deivon.dionisio" target="_blank">
-              <img id="efects" src="images/facebook.svg" alt="ícone facebook" />
+            <a href="https://www.facebook.com/deivon.dionisio2" target="_blank">
+              <img src="images/facebook.svg" alt="ícone facebook" />
             </a>
           </li>
           <li class="twitter">
             <a href="https://twitter.com/deivon2dionisio" target="_blank">
-              <img id="efects" src="images/twitter.svg" alt="ícone twitter" />
+              <img src="images/twitter.svg" alt="ícone twitter" />
             </a>
           </li>
         </ul>
       </div>
     </main>
-    <script>
-      const LinksSocialMedia = {
-        github: 'deivondionisio',
-        youtube: 'UC493-ESR62ScZiMxd10GYFA',
-        facebook: 'deivon.dionisio',
-        instagram: 'deivon_dionisio',
-        twitter: 'deivon2dionisio'
-      }
-
-      function changeSocialMediaLinks() {
-        for (let li of socialLinks.children) {
-          const social = li.getAttribute('class')
-
-          li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}`
-        }
-      }
-
-      changeSocialMediaLinks()
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
