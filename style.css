@@ -2,6 +2,15 @@
   margin: 0;
 }
 
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes bounce {
   0%,
   20%,
@@ -69,11 +78,7 @@ main {
   position: absolute;
   top: -15px;
   z-index: 1;
-}
-
-.avatar span:hover {
-  transform: rotate(6000grad);
-  transition: 3s;
+  animation: rotate 5s linear infinite;
 }
 
 .avatar > img {
