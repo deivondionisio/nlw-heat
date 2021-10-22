@@ -15,3 +15,12 @@ function changeSocialMediaLinks() {
 }
 
 changeSocialMediaLinks()
+
+function getGitHubProfileInfos() {
+  const url = `https://api.github.com/users/${LinksSocialMedia.github}`
+
+  fetch (url)
+  .then(response => )
+}
+
+getGitHubProfileInfos()

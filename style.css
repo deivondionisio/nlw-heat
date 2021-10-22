@@ -2,6 +2,26 @@
   margin: 0;
 }
 
+@keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
 @keyframes is-panning {
   from {
     transform: translateY(-90px);
@@ -42,6 +62,7 @@ main {
   margin: 11.5rem auto 0;
   position: relative;
   animation: is-panning 10s ease-in-out infinite alternate;
+  transition: 3s;
 }
 
 .avatar span {
@@ -88,4 +109,8 @@ ul {
   display: flex;
   gap: 0.5rem;
   justify-content: center;
+}
+
+li:hover {
+  animation: bounce 1s;
 }
