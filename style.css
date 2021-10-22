@@ -37,6 +37,24 @@
   }
 }
 
+@keyframes blinkCursor {
+  form {
+    border-right: 1px solid rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 16em;
+  }
+}
+
 html,
 body {
   --black: hsl(240, 6%, 13%);
@@ -105,6 +123,11 @@ a {
 
 p {
   margin-top: 2rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.75);
+  white-space: normal;
+  overflow: hidden;
+  animation: blinkCursor 1500ms steps(30) infinite normal,
+    typing 4s steps(30) 1s normal both;
 }
 
 ul {
