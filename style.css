@@ -34,7 +34,7 @@
 
 @keyframes is-panning {
   from {
-    transform: translateY(-90px);
+    transform: translateY(-25px);
   }
 }
 
@@ -76,11 +76,14 @@ body {
 }
 
 main {
-  background: url(images/background.svg);
+  background: url(images/background.svg) no-repeat center/cover;
   width: 375px;
   height: 650px;
   color: var(--grey-white);
-  border-radius: 5px;
+  /*border-radius: 5px;
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;*/
 }
 
 .container {
@@ -94,8 +97,8 @@ main {
   width: 10rem;
   margin: 11.5rem auto 0;
   position: relative;
-  /*animation: is-panning 10s ease-in-out infinite alternate;
-  transition: 3s;*/
+  animation: is-panning 10s ease-in-out infinite alternate;
+  transition: 3s;
 }
 
 .avatar span {
@@ -144,10 +147,10 @@ p {
   margin-top: 2rem;
   font-weight: 400;
   font-size: 0.875;
-  /*border-right: 1px solid rgba(255, 255, 255, 0.75);
+  border-right: 1px solid rgba(255, 255, 255, 0.75);
   white-space: normal;
   overflow: hidden;
-  animation: blinkCursor 1500ms steps(30) infinite normal,
+  /*animation: blinkCursor 1500ms steps(30) infinite normal,
     typing 4s steps(30) 1s normal both;*/
 }
 
